@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Save Course"
+        android:id="@+id/courseSave"/>
+
+    <item android:title="Delete Course"
+        android:id="@+id/courseDelete"/>
+
+    <item android:title="Share"
+        android:id="@+id/courseShare"/>
+
+    <item android:title="Notify"
+        android:id="@+id/courseNotify"/>
+
+</menu>

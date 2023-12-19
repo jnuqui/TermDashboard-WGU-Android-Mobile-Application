@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.TermDetails">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="409dp"
+        android:layout_height="200dp"
+        android:background="#57009688"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Term ID:"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"></TextView>
+
+
+                <TextView
+                    android:id="@+id/editTermID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:editable="false"
+                    android:hint="Ex: 101"></TextView>
+
+
+            </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Term Name:"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"></TextView>
+                />
+
+                <EditText
+                    android:id="@+id/editTermName"
+                    android:hint="Term 1"
+                    android:layout_height="50dp"
+                    android:layout_width="wrap_content"></EditText>
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Start Date:"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"></TextView>
+                />
+
+                <TextView
+                    android:id="@+id/editStartTermDate"
+                    android:editable="false"
+                    android:hint="Click to add date"
+                    android:layout_height="50dp"
+                    android:layout_width="wrap_content"></TextView>
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="End Date:"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"></TextView>
+                />
+
+                <TextView
+                    android:id="@+id/editEndTermDate"
+                    android:editable="false"
+                    android:hint="Click to add date"
+                    android:layout_height="50dp"
+                    android:layout_width="wrap_content"></TextView>
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/baseline_add_24" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/courseRecyclerView"
+        android:layout_width="409dp"
+        android:layout_height="473dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="201dp"
+        app:layout_constraintTop_toBottomOf="@id/scrollView"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
